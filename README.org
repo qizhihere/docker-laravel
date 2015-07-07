@@ -12,32 +12,32 @@ Create a laravel application with only a few configuration.
 
 * How to use?
 
-1. Firstly, make sure docker-compose has been installed:
+*** 1. Firstly, make sure docker-compose has been installed:
 
-BEGIN_SRC sh :shebang #!/usr/bin/env bash
-sudo pip2 install docker-compose
-END_SRC
+#+BEGIN_SRC sh :shebang #!/usr/bin/env bash
+  sudo pip2 install docker-compose
+#+END_SRC
 
-2. pull docker images
+*** 2. pull docker images
 
-BEGIN_SRC sh :shebang #!/usr/bin/env bash
-sudo docker pull littleqz/nginx
-sudo docker pull littleqz/php
-sudo docker pull littleqz/mariadb
+#+BEGIN_SRC sh :shebang #!/usr/bin/env bash
+  sudo docker pull littleqz/nginx
+  sudo docker pull littleqz/php
+  sudo docker pull littleqz/mariadb
 
-END_SRC
+#+END_SRC
 
-3. clone the repo and initialize your laravel app
+*** 3. clone the repo and initialize your laravel app
 
-BEGIN_SRC sh :shebang #!/usr/bin/env bash
-git clone https://github.com/qizhihere/docker-laravel.git
-cd docker-laravel
+#+BEGIN_SRC sh :shebang #!/usr/bin/env bash
+  git clone https://github.com/qizhihere/docker-laravel.git
+  cd docker-laravel
 
-# do some configuration in ~init.sh~
-sudo ./init.sh
-END_SRC
+  # do some configuration in ~init.sh~
+  sudo ./init.sh
+#+END_SRC
 
-4. Run you app!
+*** 4. Run you app!
 
 #+BEGIN_SRC sh :shebang #!/usr/bin/env bash
   cd your-project-dir
