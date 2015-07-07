@@ -1,0 +1,19 @@
+#+TITLE: Quickly build my laravel app!
+#+DESCRIPTION:
+#+KEYWORDS:
+#+AUTHOR: littleqz
+#+EMAIL: qizhihere@gmail.com
+#+DATE: <2015-07-07 Jul 22:09>
+#+STARTUP: indent hideblocks content
+#+OPTIONS: ^:{} toc:nil
+
+* What's this?
+Create a laravel application with only a few configuration.
+
+* How to use?
+
+  - ~sudo pip2 install docker-compose~
+  - ~git clone https://github.com/qizhihere/docker-laravel.git && cd docker-laravel~
+  - Do some configuration in init.sh
+  - ~sudo ./init.sh~
+  - ~cd your-project-dir && sudo docker-compose -d app~
