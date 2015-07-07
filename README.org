@@ -1,4 +1,4 @@
-#+TITLE: Quickly build my laravel app!
+#+TITLE: Quickly build laravel app!
 #+DESCRIPTION:
 #+KEYWORDS:
 #+AUTHOR: littleqz
