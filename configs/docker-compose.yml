@@ -1,0 +1,29 @@
+app:
+  image: littleqz/nginx
+  command: nginx
+  volumes:
+    - ./:/var/www/$PROJECT_NAME
+    - ./nginx.conf:/etc/nginx/sites-enabled/$PROJECT_NAME.conf
+  links:
+    - mariadb
+    - phpfpm
+  ports:
+    - "80:80"
+
+mariadb:
+  image: littleqz/mariadb
+  command: mysqld_safe
+  expose:
+    - "3306"
+  volumes:
+    - ./storage/mysql:$CONTAINER_DB_DIR
+
+phpfpm:
+  image: littleqz/php
+  command: php-fpm
+  volumes:
+    - ./:/var/www/$PROJECT_NAME
+  links:
+    - mariadb
+  expose:
+    - "9000"
