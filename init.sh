@@ -59,7 +59,7 @@ cp -rf ./configs/* "$PROJECT_NAME/" &&
 drun-once -v "$(realpath ./$PROJECT_NAME/${LARAVEL_DB_DIR#./})":"$CONTAINER_DB_DIR" littleqz/mariadb \
           sh /var/www/database/init.sh &&
 echo "Project initialize finished!" &&
-rm -rf ./{database,configs,init.sh} &>/dev/null && exit 0
+rm -rf ./{database,configs,init.sh,README.org} &>/dev/null && exit 0
 
 echo "Failed!"
 exit 1
