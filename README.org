@@ -14,6 +14,6 @@ Create a laravel application with only a few configuration.
 
   - ~sudo pip2 install docker-compose~
   - ~git clone https://github.com/qizhihere/docker-laravel.git && cd docker-laravel~
-  - Do some configuration in init.sh
+  - do some configuration in ~init.sh~
   - ~sudo ./init.sh~
   - ~cd your-project-dir && sudo docker-compose -d app~
