@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # project settings
-PROJECT_NAME="compass.local"
+PROJECT_NAME="default-project.local"
 
 # data save directories
 LARAVEL_DB_DIR="./storage/mysql"
