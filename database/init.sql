@@ -1,11 +1,11 @@
 set names utf8;
 
 -- create a specific user and database for this app
-set @user = "default";
-set @pass = "default";
-set @mhost = "%";
-set @db   = "default";
-set @root_pass = "root";
+set @user = '$DB_USER';
+set @pass = '$DB_PASS';
+set @mhost = '%';
+set @db   = '$DB_NAME';
+set @root_pass = '$DB_ROOT_PASS';
 
 -- create database
 set @db_sql = concat('create database `', @db, '` default charset utf8 collate utf8_general_ci');
