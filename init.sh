@@ -77,8 +77,8 @@ chown -R 60:60 "./$PROJECT_NAME/${LARAVEL_DB_DIR#./}" &&
 
 echo "Project initialize finished!" &&
 
-cp "$0" "$SCRIPT_DIR/db.ini" &&
-sed -i '/^DB_.\+=.*$/!d' "$SCRIPT_DIR/db.ini" &&
+cp "$0" "$SCRIPT_DIR/$PROJECT_NAME/db.ini" &&
+sed -i '/^DB_.\+=.*$/!d' "$SCRIPT_DIR/$PROJECT_NAME/db.ini" &&
 rm -rf ./{database,configs,init.sh,README.org} &>/dev/null && exit 0
 
 echo "Failed!"
