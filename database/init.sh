@@ -3,8 +3,8 @@
 SCRIPT="$0"
 PWD="${SCRIPT%/*}"
 
-rm -rf "$CONTAINER_DB_DIR"
-mysql_install_db
+rm -rf "$CONTAINER_DB_DIR/*"
+mysql_install_db >/dev/null
 
 chown -R mysql:mysql "$CONTAINER_DB_DIR"
 mysqld_safe --datadir="$CONTAINER_DB_DIR" &
